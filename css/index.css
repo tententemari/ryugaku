@@ -1,0 +1,70 @@
+/* セカンダリーメニュー*/
+.secondary-menu ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    list-style-type: none;
+}
+.secondary-menu li {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+.secondary-menu li a{
+    width: 100%;
+    padding: 15px 0px;
+    margin: 0;
+    display: block;
+    border-bottom: 1px solid var(--white-alternative);
+    background-color: var(--theme-color-navy);
+    text-decoration: none;
+    color: var(--white-alternative);
+    text-align: center;
+    font-size: 14px;
+}
+.secondary-menu ul > li:hover > a{
+    color: var(--color-black);
+    background-color: var(--white-alternative);
+}
+
+.base-panel {
+    max-width: var(--center-max-width);
+    min-width: var(--center-min-width);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+
+}
+
+.left-panel {
+    box-sizing: border-box;
+    float: left;
+    width: 70%;
+    padding: 10px;
+}
+ .right-panel {
+    box-sizing: border-box;
+    float: right;
+    width: 30%;
+    padding-left: 5px;
+}
+
+.label {
+    text-align: center;
+    margin: 0px;
+    margin-top: 5px;
+    font-size: 16pt;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: var(--theme-color-orange);
+}
+
+.box-srcollbar {
+    overflow:auto;
+    height: 500px;
+    padding:5px;
+    font-size:12px;
+    padding-left: 1em;
+    text-indent: -1em;
+    background-color: var(--white-alternative);
+}

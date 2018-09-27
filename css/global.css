@@ -121,12 +121,12 @@ h3 {
 
 /* フッター共通設定 */
 footer {
-    clear: both;
-    background-color: var(--white-alternative);
+    border-top: 2px solid var(--color-black);
+    max-width: var(--center-max-width);
+    min-width: var(--center-min-width);
     margin-right: auto;
     margin-left: auto;
-    border-top: 2px solid var(--color-black);"
-    text-align: right;
+    background-color: var(--white-alternative);
 }
 
 footer .footer_updt{

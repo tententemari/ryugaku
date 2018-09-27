@@ -1,5 +1,5 @@
 var tabs = document.getElementById('left_menu_tab').getElementsByClassName('menu-tab');
-var pages = document.getElementById('tab-content').getElementsByClassName('tab-content');
+var pages = document.getElementById('tab_content').getElementsByClassName('tab-content');
 
 
 function changeTab() {

@@ -50,14 +50,15 @@ h1 {
 }
 
 h2 {
-  font-size: 12pt;
-  font-weight: normal;
-  margin-top: 0;
-  margin-bottom: 0;
+    font-size: 12pt;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 h3 {
-  font-size: 12pt;
+    font-size: 12pt;
+    text-align: center;
 }
 
 .header-margin {

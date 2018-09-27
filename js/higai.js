@@ -13,11 +13,16 @@ function changeTab() {
 
         }
         else {
+          /*ページのトップへスクロール*/
           var current_scroll = Math.max(document.documentElement.scrollTop || document.body.scrollTop);
           scrollBy( 0, -current_scroll);
-           pages[i].style.display = "block";
-           tabs[i].style.color = "var(--color-black)";
-           tabs[i].style.backgroundColor = "var(--white-alternative)";
+          
+          /*urlの書き換え*/
+          history.replaceState('tab-change','','?' + targetid);
+
+          pages[i].style.display = "block";
+          tabs[i].style.color = "var(--color-black)";
+          tabs[i].style.backgroundColor = "var(--white-alternative)";
         }
     }
     return false;

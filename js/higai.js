@@ -1,4 +1,4 @@
-var tabs = document.getElementById('left-menu-tab').getElementsByClassName('menu-tab');
+var tabs = document.getElementById('left_menu_tab').getElementsByClassName('menu-tab');
 var pages = document.getElementById('tab-content').getElementsByClassName('tab-content');
 
 
@@ -7,7 +7,7 @@ function changeTab() {
 
     for(var i=0; i<pages.length; i++) {
            tabs[i].removeAttribute('style');
-        
+
         if( pages[i].id != targetid ) {
            pages[i].style.display = "none";
 
@@ -20,7 +20,7 @@ function changeTab() {
     }
     return false;
 }
-    
+
 for(var i=0; i<tabs.length; i++) {
    tabs[i].onclick = changeTab;
 }
@@ -44,5 +44,3 @@ if(selected_tabs.length != 0){
 else{
     tabs[0].onclick();
 }
-
-

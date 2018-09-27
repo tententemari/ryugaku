@@ -53,3 +53,19 @@
     color: var(--color-black);
     background-color: var(--white-alternative);
 }
+
+.tab-content01 {
+    background-color: #e6ffe9;
+}
+
+.tab-content02 {
+    background-color: #ffffee;
+}
+
+.tab-content03 {
+    background-color: #eeffff;
+}
+
+.tab-content04 {
+     background-color: #ffeeff;
+}

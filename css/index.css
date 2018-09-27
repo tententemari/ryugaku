@@ -28,6 +28,7 @@
 }
 
 .base-panel {
+    display: flex;
     max-width: var(--center-max-width);
     min-width: var(--center-min-width);
     margin-left: auto;
@@ -38,13 +39,11 @@
 
 .left-panel {
     box-sizing: border-box;
-    float: left;
     width: 70%;
     padding: 10px;
 }
  .right-panel {
     box-sizing: border-box;
-    float: right;
     width: 30%;
     padding-left: 5px;
 }

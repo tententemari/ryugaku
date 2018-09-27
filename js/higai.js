@@ -1,18 +1,20 @@
 var tabs = document.getElementById('left_menu_tab').getElementsByClassName('menu-tab');
-var pages = document.getElementById('tab_content').getElementsByClassName('tab-content');
+var pages = document.getElementById('right-panel').getElementsByClassName('tab-content');
 
 
 function changeTab() {
     var targetid = this.href.substring(this.href.indexOf('#') + 1, this.href.length);
 
     for(var i=0; i<pages.length; i++) {
-           tabs[i].removeAttribute('style');
+        tabs[i].removeAttribute('style');
 
         if( pages[i].id != targetid ) {
            pages[i].style.display = "none";
 
         }
         else {
+          var current_scroll = Math.max(document.documentElement.scrollTop || document.body.scrollTop);
+          scrollBy( 0, -current_scroll);
            pages[i].style.display = "block";
            tabs[i].style.color = "var(--color-black)";
            tabs[i].style.backgroundColor = "var(--white-alternative)";

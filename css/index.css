@@ -29,12 +29,6 @@
 
 .base-panel {
     display: flex;
-    max-width: var(--center-max-width);
-    min-width: var(--center-min-width);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-
 }
 
 .main-panel {
@@ -59,11 +53,10 @@
 }
 
 .box-srcollbar {
-    overflow:auto;
+    overflow: auto;
     height: 500px;
-    padding:5px;
-    font-size:12px;
-    padding-left: 1em;
+    padding: 5px 5px 5px 1em;
+    font-size: 12px;
     text-indent: -1em;
     background-color: var(--white-alternative);
 }

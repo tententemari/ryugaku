@@ -10,7 +10,7 @@
 
 --white-alternative: #f8f8ff;
 
---center-max-width: 800px;
+--center-max-width: 900px;
 --center-min-width: 700px;
 
 --header-height-full: 120px;
@@ -133,6 +133,7 @@ h3 {
 
 /* フッター共通設定 */
 footer {
+    margin-top: 5px;
     border-top: 2px solid var(--color-black);
     max-width: var(--center-max-width);
     min-width: var(--center-min-width);

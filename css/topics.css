@@ -29,6 +29,6 @@
 
 .content-panel > a {
     display: block;
-    margin-top: calc(-1 * var(--header-height-colapse));
-    padding-top: var(--header-height-colapse);
+    margin-top: calc(-1 * var(--header-height-full));
+    padding-top: var(--header-height-full);
 }

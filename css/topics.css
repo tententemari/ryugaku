@@ -1,88 +1,3 @@
-<<<<<<< HEAD
-﻿/* ▼共通設定(global.css以外は共通)▼ */
-:root {
---theme-color-navy: #000080;
-
---theme-color-azure: #f0ffff;
-
---theme-color-orange: #ffa500;
-
---color-black: #000000;
-
---white-alternative: #f8f8ff;
-
---center-max-width: 1000px;
---center-min-width: 700px;
-}
-/* ▲共通設定▲ */
-
-h1 {
-    font-size: 24pt;
-    margin-bottom: 5px;
-}
-
-body {
-    font-size: 11pt;
-    background-color: var(--theme-color-azure);
-}
-
-header {
-    min-width: var(--center-min-width);
-    color: var(--theme-color-navy);
-}
-
-/* ヘッダーメニュー*/
-/* メインメニュー */
-
-.main-menu {
-    min-width: var(--center-min-width);
-    background-color: var(--theme-color-navy);
-}
-
-.main-menu ul {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-.main-menu ul > li{
-    display: inline-block;
-}
-.main-menu ul > li > a{
-    display: block;
-    padding: 15px 15px;
-    font-size: 12pt;
-    color: var(--white-alternative);
-    text-decoration:none;
-}
-.main-menu ul > li:hover > a{
-    color: var(--color-black);
-    background-color: var(--white-alternative);
-}
-
-/* サブメニュー */
-.main-menu ul li ul{
-    display: none;
-}
-.main-menu ul li:hover ul{
-    display: block;
-}
-.main-menu ul li ul{
-    position: absolute;
-    padding:0;
-}
-.main-menu ul li ul li{
-    display: block;
-    background-color: var(--theme-color-navy);
-    border-bottom:1px solid var(--white-alternative);
-}
-.main-menu ul li .main-menu ul li a{
-    text-decoration:none;
-    color: var(--white-alternative);
-}
-.main-menu ul li ul li a:hover{
-    color: var(--color-black);
-.main-menu{margin-bottom:5em;
-=======
 .base-panel {
     display: flex;
 }
@@ -114,7 +29,11 @@ header {
 
 .content-panel > a {
     display: block;
+<<<<<<< HEAD
     margin-top: calc(-1 * var(--header-height-colapse));
     padding-top: var(--header-height-colapse);
->>>>>>> 0cb05558a2120040d06fe1647acd6ec294905c14
+=======
+    margin-top: calc(-1 * var(--header-height-full));
+    padding-top: var(--header-height-full);
+>>>>>>> ffaef7eb3dbfee567f01a6b85bb07c76cd61cfb6
 }

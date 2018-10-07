@@ -1,28 +1,34 @@
-var tabs = document.getElementById('left-menu-tab').getElementsByClassName('menu-tab');
-var pages = document.getElementById('tab-content').getElementsByClassName('tab-content');
+var tabs = document.getElementById('tab_panel').getElementsByClassName('menu-tab');
+var pages = document.getElementById('content_panel').getElementsByClassName('tab-content');
 
 
 function changeTab() {
     var targetid = this.href.substring(this.href.indexOf('#') + 1, this.href.length);
 
     for(var i=0; i<pages.length; i++) {
-           tabs[i].removeAttribute('style');
-        
-        if( pages[i].id != targetid ) {
-           pages[i].style.display = "none";
 
+        if( pages[i].id == targetid ) {
+            /* 選択されたタブのパラメータでurlを書き換える */
+            history.replaceState('tab-change','','?' + targetid);
+
+            /* ページのトップへスクロール */
+            var current_scroll = Math.max(document.documentElement.scrollTop || document.body.scrollTop);
+            scrollBy( 0, -current_scroll);
+
+            /* 選択されたページの表示、タブのスタイル変更 */
+            tabs[i].classList.add('selected-tab');
+            pages[i].classList.add('selected-content');
         }
         else {
-           pages[i].style.display = "block";
-           tabs[i].style.color = "var(--color-black)";
-           tabs[i].style.backgroundColor = "var(--white-alternative)";
+            tabs[i].classList.remove('selected-tab');
+            pages[i].classList.remove('selected-content');
         }
     }
     return false;
 }
-    
+
 for(var i=0; i<tabs.length; i++) {
-   tabs[i].onclick = changeTab;
+    tabs[i].onclick = changeTab;
 }
 
 
@@ -44,5 +50,3 @@ if(selected_tabs.length != 0){
 else{
     tabs[0].onclick();
 }
-
-

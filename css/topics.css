@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿/* ▼共通設定(global.css以外は共通)▼ */
 :root {
 --theme-color-navy: #000080;
@@ -81,4 +82,39 @@ header {
 .main-menu ul li ul li a:hover{
     color: var(--color-black);
 .main-menu{margin-bottom:5em;
+=======
+.base-panel {
+    display: flex;
+}
+.topic-list-panel {
+   text-indent: -1em;
+   font-size: 0.9em;
+   box-sizing: border-box;
+   width: 30%;
+   padding-left: 5px;
+}
+
+.content-panel {
+    box-sizing: border-box;
+    width: 70%;
+    padding: 10px;
+}
+
+
+.content-panel > div > h3 {
+    text-align: left;
+    text-decoration: underline;
+    margin-top: 0;
+}
+
+.content-panel > div {
+    margin: 10px 0;
+    background-color: var(--white-alternative);
+}
+
+.content-panel > a {
+    display: block;
+    margin-top: calc(-1 * var(--header-height-colapse));
+    padding-top: var(--header-height-colapse);
+>>>>>>> 0cb05558a2120040d06fe1647acd6ec294905c14
 }

@@ -12,7 +12,7 @@
 }
 .secondary-menu li a{
     width: 100%;
-    padding: 15px 0px;
+    padding: 15px 0;
     margin: 0;
     display: block;
     border-bottom: 1px solid var(--white-alternative);
@@ -28,30 +28,23 @@
 }
 
 .base-panel {
-    max-width: var(--center-max-width);
-    min-width: var(--center-min-width);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-
+    display: flex;
 }
 
-.left-panel {
+.main-panel {
     box-sizing: border-box;
-    float: left;
     width: 70%;
     padding: 10px;
 }
- .right-panel {
+ .sub-panel {
     box-sizing: border-box;
-    float: right;
     width: 30%;
     padding-left: 5px;
 }
 
 .label {
     text-align: center;
-    margin: 0px;
+    margin: 0;
     margin-top: 5px;
     font-size: 16pt;
     border-top-left-radius: 10px;
@@ -60,11 +53,10 @@
 }
 
 .box-srcollbar {
-    overflow:auto;
+    overflow: auto;
     height: 500px;
-    padding:5px;
-    font-size:12px;
-    padding-left: 1em;
+    padding: 5px 5px 5px 1em;
+    font-size: 12px;
     text-indent: -1em;
     background-color: var(--white-alternative);
 }

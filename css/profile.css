@@ -1,41 +1,40 @@
-.main-table table { 
+.main-table {
     width: 100%;
     border-collapse: collapse;
-    border: solid 1px #000000;
+    border: solid 1px var(--color-black);
 }
 
 /*セルの設定*/
-.main-table table td {
-    border: solid 1px #000000;
-    padding: 5px;
+.main-table td {
+    border: solid 1px var(--color-black);
 }
 
 /*第1カラムの設定*/
 .col01 {
     width: 20%;
-    background-color: #ffe4e1;
     text-align: center;
-    font-size: 12pt;
+    background-color: #ffe4e1;
 }
 
 /*第2カラムの設定*/
 .col02 {
     width: 55%;
     text-align: left;
-    font-size: 12pt;
 }
 /*第3カラムの設定*/
 .col03 {
     width: 25%;
-    background-color: #d9ecfb;
     text-align: left;
-    font-size: 10pt;
+    font-size: 0.9em;
+    padding: 1em;
+    text-indent: -1em;
+    margin-left: 5px;
+    background-color: #d9ecfb;
 }
 
 /*第3カラムの画像のデフォルトスタイル*/
-.col03 img {
-    width: 120px;
-    height: 90px;
+.col01 img {
+    width: 100px;
+    height: 100px;
     margin: 1px;
-    vertical-align:middle;
 }
